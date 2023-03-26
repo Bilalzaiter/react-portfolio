@@ -1,0 +1,27 @@
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 99vw;
+    height: 900px;
+    background-image: url('../../img/banner-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    animation: zoom 10s infinite;
+    z-index: -1;
+  }
+  
+  @keyframes zoom {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.02);
+    }
+  }
+  @media  (max-width:900px) {
+    .background-image{
+      height: 1200px
+    }
+  }

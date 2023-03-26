@@ -1,0 +1,82 @@
+.btn-gradient{
+    background: linear-gradient(to right, rgb(197, 130, 238), rgb(100, 0, 128) );
+    border: 1px solid white;
+  }
+  .padding-bottom{
+    padding-bottom: 100px;
+  }
+  .margin-top{
+    margin-top: 100px
+  }
+  .retyper{
+    width: 630px
+  }
+  .fs-10{
+    font-size: 63px!important;
+  }
+  @media  (max-width:900px) {
+    .fs-10{
+      font-size: 40px!important;
+    }
+    .retyper{
+      width: 400px
+    }
+    img.astraunot{
+      width: 200px
+    }
+  }
+  @media  (max-width:1200px) {
+    .fs-10{
+      font-size: 50px!important;
+    }
+    .retyper{
+      width: 500px
+    }
+    img.astraunot{
+      width: 300px
+    }
+  }
+  .border-right{
+    border-right: 0.08em solid #9b9b9b;
+  }
+  img.astraunot{
+    width: 500px;
+    animation: bouncer 4s infinite;
+  }
+  
+  @keyframes bouncer {
+    0%, 100% {
+      transform: translateY(60px);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+  .circle1-container {
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+  }
+  .circle1 {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid white;
+  top: 5px;
+  right: -10px;
+  position: relative;
+  transition: .5s ease-in-out;
+}
+.circle1-container:hover .circle1 {
+  cursor: pointer;
+  right: -60px
+}
+.circle1::before {
+  content: "\2794";
+  font-size: 18px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-55%, -43%);
+}
