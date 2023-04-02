@@ -8,10 +8,10 @@ const Footer = () => {
       <Container>
         <Row className="justify-content-center">
           <MailchimpForm />
-          <Col>
+          <Col size{6}>
             <h2 className="logo-footer text-white">LOGO</h2>
           </Col>
-          <Col size={12} sm={6} className="text-center text-sm-end">
+          <Col size={6} className="text-center text-sm-end">
               <nav className="d-flex  text-center text-sm-end ">
                 <ul className="navbar-nav navbar-nav1">
                   <li className="nav-item nav-item1">
